@@ -1,6 +1,6 @@
 # Tiny planner
 
-Simple planner for daily tasks & activities. Basically, this was just one of my homework assignments.
+Simple planner for daily tasks & activities. [Link](https://tinny-planner.netlify.app/)
 
 ![Demo preview](./images/demo.png)
 
@@ -11,4 +11,4 @@ Simple planner for daily tasks & activities. Basically, this was just one of my 
 - Looks fine :)
 
 ## PS
-Most stuff here is done in a hurry))
+Basically, this was just one of my homework assignments. Most stuff here is done in a hurry))
