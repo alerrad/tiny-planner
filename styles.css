@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 50px 0;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer p {
+    max-width: 300px;
+    color: #555;
+    margin: auto;
+}
+
+footer a {
+    color: #1bc3c9;
+}
+
+.options {
+    position: absolute;
+    top: 5px;
+    padding: 5px;
+    right: 5px;
+    background-color: #fff;
+    display: none;
+}
+
+.task {
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px #eee solid;
+    color: #444;
+    position: relative;
+    cursor: pointer;
+}
+
+.task:hover .options,
+.col:hover > .options {
+    display: block;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.d-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.centered {
+    text-align: center;
+}
+
+.col-heading p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.tasks {
+    margin-top: 40px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.col {
+    background-color: #FFF;
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px 0px #dedede;
+    min-height: 15rem;
+    position: relative;
+}
+
+.new-task-form input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.d-none {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+}
+
+#logo {
+    color: #1bc3c9;
+}
+
+#logo + p {
+    max-width: 250px;
+    margin: auto;
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+}
+
+#todo {
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    min-height: 60vh;
+    padding: 30px 0;
+}
+
+#add-day {
+    cursor: pointer;
+    transition: all .3s ease-in;
+    position: relative;
+}
+
+#add-day img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#add-day:hover {
+    background-color: #efefef;
+}
+
+#darken-bg {
+    background-color: rgba(153, 153, 153, 0.612);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+#date-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 400px;
+    transition: all .3s;
+}
+
+#date-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+#date-form button {
+    width: 200px;
+    color: #fff;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+}

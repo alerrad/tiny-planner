@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon-light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="./images/icon-dark.svg" media="(prefers-color-scheme: dark)">
+    <script src = "main.js"></script>
+    <title>T-Planner</title>
+</head>
+<body>
+    <noscript>You have to enable javascript to use this app!</noscript>
+    <main>
+        <h1 class="centered" id="logo">Tiny planner</h1>
+        <p class="centered">create your plan!</p>
+        <section id = "todo">
+            <div class="container d-grid" id="days">
+                <div class="col" id="add-day">
+                    <img src="./images/add-plus.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="centered">&copy; Alerrad 2023. Everything made and designed by <a href="https://github.com/alerrad" target="_blank">@Alerrad</a></p>
+    </footer>
+    <div class="hidden fixed" id="darken-bg" onclick="toggle_date_form()"></div>
+    <form class="hidden fixed" id="date-form">
+        <input type="date" placeholder="Select date" id="date-input" required/>
+        <button type="submit">Add new</button>
+    </form>
+</body>
+</html>
